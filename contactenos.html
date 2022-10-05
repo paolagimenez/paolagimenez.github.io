@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="Huellas" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Huellas</title>
+</head>
+
+<body>
+  <header class="principal ">
+    <div class="principal ">
+      <img class="img-tarj" src="./imagenes/LogoHuellasSinFondo.PNG" alt="huellasLogoGde" width="350">
+    </div>
+  </header>
+  <nav>
+    <ul class="principal">
+      <li><a class="nav1" href="index.html">Inicio</a></li>
+      <li><a class="nav2" href="profesionales.html">Profesionales</a></li>
+      <li><a class="nav1" href="menu2.html">Menu2</a></li>
+      <li><a class="nav2Activo" href="contactenos.html">Contáctanos</a></li>
+    </ul>
+  </nav>
+  <main class="principal">
+      <section class="formularioDeContacto">
+      <div class="formulario">
+        
+        <h2>Escríbenos y en breve los pondremos en contacto contigo :)</h2>
+        <form   action="https://formspree.io/f/mqkjbnbv"  method="POST">
+          <p>
+            <label for="nombre" class="ingresar_nombre">Nombre
+              <span class="obligatorio">*</span>
+            </label>
+            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+              placeholder="Escriba su nombre"/>
+          </p>
+
+          <p>
+            <label for="email" class="ingresar_email">Email
+              <span class="obligatorio">*</span>
+            </label>
+            <input type="email" name="introducir_email" id="email" required="obligatorio"
+              placeholder="Escriba su Email"/>
+          </p>
+
+          <p>
+            <label for="telefonoe" class="ingresar_telefono">Teléfono
+            </label>
+            <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escriba su  teléfono"/>
+          </p>
+
+          <p>
+            <label for="asunto" class="ingresar_asunto">Asunto
+              <span class="obligatorio">*</span>
+            </label>
+            <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
+              placeholder="Escriba un asunto"/>
+          </p>
+
+          <p>
+            <label for="mensaje" class="ingresar_mensaje">Mensaje
+              <span class="obligatorio">*</span>
+            </label>
+            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+              placeholder="Deja aquí tu mensaje..."></textarea>
+          </p>
+
+          <input type="submit" Value="Enviar" >
+       
+          <p class="aviso">
+            <span class="obligatorio"> * </span>los campos son obligatorios.
+          </p>
+
+        </form>
+      </div>
+
+    </section>
+
+    <section class="datos">
+      <h1>Contactanos</h1>
+      <ul>
+        <li><i class="fa-solid fa-hashtag"></i><a href="#">Instagram</a></li>
+        <li><i class="fa-solid fa-laptop"></i><a
+            href="https://www.facebook.com/profile.php?id=100063650422301">Facebook</a></li>
+        <li><i class="fa-solid fa-phone"></i><a href="#">Teléfono</a></li>
+        <li><i class="fa-solid fa-envelope"></i><a href="#">Email</a></li>
+        <li><i class="fa-solid fa-location-dot"></i><a href="#">Dirección</a></li>
+      </ul>
+    </section>
+    <section class="mapa">
+      <h1>Donde estamos?</h1>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.177932059727!2d-60.81160788525488!3d-32.91989687786369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b64dabf7f8aa67%3A0x5efadaffc72a63f3!2sHuellas%2C%20Rehabilitaci%C3%B3n%20Infantil!5e0!3m2!1ses-419!2sar!4v1664996781502!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </main>
+</body>
+
+<footer class="footer green">
+  <a href="htps://www.facebook.com"></a>
+  <i class=""> </i>
+  <p>Copyright ©2022 | Todos los Derechos Reservados - Created by Paola Giménez</p>
+</footer>
+
+</html>
