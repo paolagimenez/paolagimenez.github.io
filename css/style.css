@@ -9,19 +9,23 @@
 .principal {
     /*max-width: 1080px;*/
     /*margin: 0 auto;*/
-    color: #444;
+  
 }
 .encabezado{
   display: flex;
   justify-content: space-around;
 
 }
-
+body{
+  height: 100%; 
+  font-family: 'Noto Sans', sans-serif;
+  background-color: white; 
+}
 header {   
     position: top;
     top: 0;
     width: 100%;   
-    color: #444;
+ 
 }
 
 header span {
@@ -115,11 +119,7 @@ nav ul li a.nav2Activo:hover {
   font-size: 20px;
 }
 
-body{
-  height: 100%; 
-  font-family: 'Noto Sans', sans-serif;
-  background-color: pink; 
-}
+
 
 main {
     padding: 70px; 
@@ -188,7 +188,7 @@ footer {
 
 .tablaContactenos {
   display: flex;
-  color: #444;
+ 
 }
 
   .formularioDeContacto{  
