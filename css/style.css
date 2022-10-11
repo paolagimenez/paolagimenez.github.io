@@ -3,30 +3,35 @@
 * {
     box-sizing: border-box;
     margin: 0;   
+    font-family: 'Courgette';
   }
 
 .principal {
     /*max-width: 1080px;*/
     /*margin: 0 auto;*/
-    font-family: 'Courgette';
+    color: #444;
+}
+.encabezado{
+  display: flex;
+  justify-content: space-around;
+
 }
 
 header {   
-    /*padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 50px;*/
     position: top;
     top: 0;
-    width: 100%;
-   
+    width: 100%;   
+    color: #444;
 }
+
 header span {
-  color: white;
-  font-size: 50px;
+  color: black;
+  font-size: 45px;
   display: inline-block;
   position: relative;
   bottom: 3px;    
 }
+
 nav {  
     height: 25px;    
     top: 250px;
@@ -35,8 +40,7 @@ nav {
 nav ul {
     list-style: none;
     padding: 25px;
-    display: flex;
-  
+    display: flex;  
 }
 
 nav ul li {
@@ -44,7 +48,7 @@ nav ul li {
 }
 
 nav ul li a {
- /* font-family: 'Courier New', Courier, monospace;*/
+ 
   color: white;
   text-decoration: none;
   /*saca el subrayado del texto*/
@@ -54,8 +58,8 @@ nav ul li a {
   text-align: center;
   transition: all 0.1s;
 }
-/* Nav 1 para Inicio y Menu 2 */
 
+/* Nav 1 para Inicio y Menu 2 */
   nav ul li a.nav1 {
     background: green;
     border-radius: 0 0 25px 25px;
@@ -84,7 +88,6 @@ nav ul li a.nav1Activo:hover {
 }
 
 /* NAv2 para Profesionales y Contáctenos */
-
 nav ul li a.nav2 {
   background: fuchsia;
   border-radius: 0 0 25px 25px;
@@ -133,6 +136,7 @@ main {
     grid-template-columns: repeat(3, 300px);
     grid-template-rows: 2;
     justify-content: center;
+    grid-gap: 10px;
    /*grid-template-columns: 1fr, 1fr, 200px;*/
     /*     grid-template-columns:*/
     /* nueva unidad fr: fraccion */
@@ -144,10 +148,11 @@ main {
     transition: all 0.2s;
     box-sizing: border-box;
     text-align: center;
-    padding: 50px 30px;   
+    padding: 50px 50px;   
     line-height: 30px;
     font-size: 20px;
-    color: blue;
+    
+    border-radius: 25px;
 }
 .terapias .terapia i {
     font-size: 70px;
@@ -161,13 +166,13 @@ main {
     background-color: #97d848;;    
 }
 .rosaClaro {
-    background-color: lightpink;    
+    background-color: #686de0;    
 }
 .fuccia {
-    background-color: lightpink;    
+    background-color:#be2edd;    
 }
 .celeste{
-    background-color: rgb(0, 217, 255); 
+    background-color:#22a6b3; 
 }
 footer {
     margin: 0 auto;   
@@ -181,16 +186,18 @@ footer {
 
 /*Formulario de contacto*/
 
+.tablaContactenos {
+  display: flex;
+  color: #444;
+}
 
-
-  
   .formularioDeContacto{  
 
     display: flex;
     flex-direction: column;
     width: 460px; 
     height: auto;
-    margin: 80px auto;
+    margin: 20px auto;
     border-radius: 10px;  
     padding-top: 30px;
     padding-bottom: 20px;  

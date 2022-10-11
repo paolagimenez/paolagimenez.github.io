@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,28 +8,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="Huellas" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Huellas</title>
 </head>
 
 <body>
-  <header class="principal ">
-    <div class="principal ">
+  <header >
+    <div class="encabezado">
       <img class="img-tarj" src="./imagenes/LogoHuellasSinFondo.PNG" alt="huellasLogoGde" width="350">
     </div>
   </header>
   <nav>
     <ul class="principal">
       <li><a class="nav1" href="index.html">Inicio</a></li>
-      <li><a class="nav2" href="profesionales.html">Profesionales</a></li>
-      <li><a class="nav1" href="menu2.html">Menu2</a></li>
+      <li><a class="nav2" href="profesionales.html">Terapias</a></li>
+      <li><a class="nav1" href="menu2.html">Profesionales</a></li>
       <li><a class="nav2Activo" href="contactenos.html">Contáctanos</a></li>
     </ul>
   </nav>
   <main class="principal">
-      <section class="formularioDeContacto">
-      <div class="formulario">
-        
-        <h2>Escríbenos y en breve los pondremos en contacto contigo :)</h2>
+    
+    <div class="tablaContactenos">    
+      <section class="tablaContactenos formularioDeContacto">  
+        <h2>Escríbinos y te contactamos :)</h2>  
+      <div class="formulario">               
         <form   action="https://formspree.io/f/mqkjbnbv"  method="POST">
           <p>
             <label for="nombre" class="ingresar_nombre">Nombre
@@ -71,7 +76,7 @@
           <input type="submit" Value="Enviar" >
        
           <p class="aviso">
-            <span class="obligatorio"> * </span>los campos son obligatorios.
+            <span class="obligatorio" > * </span>los campos son obligatorios.
           </p>
 
         </form>
@@ -79,22 +84,43 @@
 
     </section>
 
-    <section class="datos">
-      <h1>Contactanos</h1>
-      <ul>
-        <li><i class="fa-solid fa-hashtag"></i><a href="#">Instagram</a></li>
-        <li><i class="fa-solid fa-laptop"></i><a
-            href="https://www.facebook.com/profile.php?id=100063650422301">Facebook</a></li>
-        <li><i class="fa-solid fa-phone"></i><a href="#">Teléfono</a></li>
-        <li><i class="fa-solid fa-envelope"></i><a href="#">Email</a></li>
-        <li><i class="fa-solid fa-location-dot"></i><a href="#">Dirección</a></li>
-      </ul>
-    </section>
     <section class="mapa">
       <h1>Donde estamos?</h1>
 
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.177932059727!2d-60.81160788525488!3d-32.91989687786369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b64dabf7f8aa67%3A0x5efadaffc72a63f3!2sHuellas%2C%20Rehabilitaci%C3%B3n%20Infantil!5e0!3m2!1ses-419!2sar!4v1664996781502!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    
+      <section class="datos">
+        <h1>Otras vías de contacto</h1>
+        <ul>
+          <li><i class="fa-brands fa-square-whatsapp"></i>
+            <a  href="https://api.whatsapp.com/send?phone=543416568781">whatsapp</a>
+          </li>
+          
+          <li>
+            <i class="fa-brands fa-square-instagram"></i>
+            <a href="#">Instagram</a>
+          </li>
+          <li>
+            <i class="fa-brands fa-square-facebook"></i>          
+            <a href="https://www.facebook.com/profile.php?id=100063650422301">Facebook</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-mobile"></i>
+            </i><a href="#">Teléfono</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-square-envelope"></i>
+            <a href="#">Email</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-location-pin"></i>
+            <a href="#">Dirección</a>
+          </li>
+        </ul>
+      </section>
     </section>
+    </div>
   </main>
 </body>
 
