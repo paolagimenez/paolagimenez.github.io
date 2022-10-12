@@ -8,13 +8,16 @@
 
 .principal {
     /*max-width: 1080px;*/
-    /*margin: 0 auto;*/
+    margin: 0 auto;
   
 }
 .encabezado{
   display: flex;
   justify-content: space-around;
 
+}
+.img-tarj{
+  width: "300px";
 }
 body{
   height: 100%; 
@@ -32,8 +35,7 @@ header span {
   color: black;
   font-size: 45px;
   display: inline-block;
-  position: relative;
-  bottom: 3px;    
+  bottom: 30px;    
 }
 
 nav {  
@@ -130,7 +132,7 @@ main {
 
 .terapias {
     display: flex;
-    background-color: lightblue;
+    background-color: yellow;
     padding: 30px;
     display: grid;    
     grid-template-columns: repeat(3, 300px);
@@ -138,7 +140,7 @@ main {
     justify-content: center;
     grid-gap: 10px;
    /*grid-template-columns: 1fr, 1fr, 200px;*/
-    /*     grid-template-columns:*/
+    /*  grid-template-columns:*/
     /* nueva unidad fr: fraccion */
    
 }
@@ -163,24 +165,26 @@ main {
     transform: scale(120%);
 }
 .verde {
-    background-color: #97d848;;    
+    background-color: #97d848;    
 }
 .rosaClaro {
     background-color: #686de0;    
 }
 .fuccia {
-    background-color:#be2edd;    
+    background-color:fuchsia;    
 }
 .celeste{
     background-color:#22a6b3; 
 }
 footer {
+ 
     margin: 0 auto;   
-    padding: 15px;
+    padding: 10px;
     text-align: right;
-    margin-top: 30px;
+    margin-top: 20px;
     font-family: 'Courgette';
     font-size: 16px;
+    background-color: #97d848; 
 }
 
 
@@ -314,3 +318,12 @@ footer {
     border: 1px solid #97d848;
   }
   
+ @media (max-width: 400px)
+ {
+.terapias{ /*lo cambio a una columna para dispositivos mas pequeños*/
+
+ grid-template-columns: 1fr;  
+ justify-items: center;
+}
+
+}
