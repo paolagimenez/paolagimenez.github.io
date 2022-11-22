@@ -7,9 +7,13 @@
   }
 
 .principal {
-    /*max-width: 1080px;*/
+ 
     margin: 0 auto;
   
+}
+.menu{
+display: flex;
+
 }
 .encabezado{
   display: flex;
@@ -17,7 +21,7 @@
 
 }
 .img-tarj{
-  width: "300px";
+  width: "100px";
 }
 body{
   height: 100%; 
@@ -39,6 +43,7 @@ header span {
 }
 
 nav {  
+  
     height: 25px;    
     top: 250px;
 }
@@ -107,7 +112,6 @@ nav ul li a.nav2:hover {
 }
 
 nav ul li a.nav2Activo {
-  /* background: #279e15; */
   background:fuchsia;
   padding: 18px;
   border-radius: 0 0 25px 25px;
@@ -141,8 +145,7 @@ main {
     grid-gap: 10px;
    /*grid-template-columns: 1fr, 1fr, 200px;*/
     /*  grid-template-columns:*/
-    /* nueva unidad fr: fraccion */
-   
+    /* nueva unidad fr: fraccion */   
 }
 
 .terapias .terapia {
@@ -176,6 +179,7 @@ main {
 .celeste{
     background-color:#22a6b3; 
 }
+
 footer {
  
     margin: 0 auto;   
@@ -192,24 +196,43 @@ footer {
 
 .tablaContactenos {
   display: flex;
- 
+  flex-direction: column;
+  width: 1080px auto; 
+  
 }
 
   .formularioDeContacto{  
 
     display: flex;
-    flex-direction: column;
-    width: 460px; 
+    flex-direction: row;
     height: auto;
     margin: 20px auto;
     border-radius: 10px;  
     padding-top: 30px;
     padding-bottom: 20px;  
-    background-color: #fbfbfb; 
     padding-left: 30px; 
   }
   
+  .ViasContacto{
+    padding-left: 40px;   
   
+  }
+  .ViasContacto li{
+    padding-left: 10px;
+    text-align: CENTER;
+    background-color: #97d848;
+  }
+  
+  .ViasContacto ul li{ 
+    padding-top: 50px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;  
+    text-align: center;    
+    width: 400px auto;
+    height: 40px;
+    
+  }
   input{
     background-color: #fbfbfb; 
     width: 408px; 
@@ -266,7 +289,7 @@ footer {
   
   
   span{
-    color: #ab4493; 
+    color: #080707;     
   }
   
   
@@ -280,7 +303,7 @@ footer {
     font-size: 30px;  
     text-align: letf; 
     padding-bottom: 20px; 
-/*    color: #ab4493;*/
+
   }
   
   
@@ -318,12 +341,20 @@ footer {
     border: 1px solid #97d848;
   }
   
- @media (max-width: 400px)
- {
-.terapias{ /*lo cambio a una columna para dispositivos mas pequeños*/
+ @media (max-width: 420px) {
+   .terapias {
+     /*lo cambio a una columna para dispositivos mas pequeños*/
 
- grid-template-columns: 1fr;  
- justify-items: center;
-}
+     grid-template-columns: 1fr;
+     justify-items: center;
+     background-color: blue;
+   }
 
-}
+   .tablaContactenos {
+
+     grid-template-columns: 1fr;
+     justify-items: center;
+     background-color: yellowgreen;
+  
+   }
+ }
