@@ -141,7 +141,7 @@ main {
     grid-template-columns: repeat(3, 350px);
     grid-template-rows: 2;
     grid-gap: 5px;  
-    justify-content: center;
+    justify-content: stretch;
  
 }
 
