@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="Huellas" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="/lib/bootstrap.min.css">
+  <!-- llamando con CDN-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!--llamarlo con el archivo descargado-->
+  <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.min.css">
+  <!-- link Bootstrap-->
+  <link rel="stylesheet" href="./style.css">
+  <title>Huellas</title>
+
+</head>
+
+<body>
+  <header class="principal">
+    <div class="principal ">
+      <img class="img-tarj" src="./imagenes/LogoHuellasSinFondo.png" alt="huellasLogoGde" width="250px" />
+    </div>
+  </header>
+  <nav>
+    <ul class="principal">
+      <li><a class="nav1" href="index.html">Inicio</a></li>
+      <li><a class="nav2Activo" href="terapias.html">Terapias</a></li>
+      <li><a class="nav1" href="nosotros.html">Nosotros</a></li>
+      <li><a class="nav2" href="contactenos.html">Contáctanos</a></li>
+    </ul>
+  </nav>
+  <main>
+
+    <section class="terapias">
+
+      <ul class="nav nav-pills">
+        <div class="container terapia verde ">
+          <img class="img-tarj" src="./iconos/icon-kinesiologia.png" alt="iconoFono" width="40px">
+            <li class="active"><a data-toggle="tab" href="#multiCollapseKinesiologia">
+              Kinesiología
+          </li>
+        </div>
+
+        <div class="terapia fuccia">
+            <img class="img-tarj" src="./iconos/icon-terapia-ocupacional.png" alt="iconoFono" width="40px">
+            <ul class="nav nav-pills"> 
+               <li class="active"><a data-toggle="tab" href="#multiCollapseEstimulacionTemprana">
+                  Estimulación Temprana
+              </li>
+          
+        </div>
+
+        <div class="container terapia verde ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-chat"
+              viewBox="0 0 16 16">
+              <path
+                d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z" />
+            </svg>
+              <li class="active"><a data-toggle="tab" href="#multiCollapseTerapiaFonoaudiologia">
+                Fonoaudiología</li>
+          
+        </div>
+</ul>
+        <ul class="nav nav-pills">
+          <div class="container terapia verde ">
+            <img class="img-tarj" src="./iconos/icon-kinesiologia.png" alt="iconoFono" width="40px">
+              <li class="active"><a data-toggle="tab" href="#multiCollapseTerapiaOcupacional">
+                Terapia Ocupacional</li>
+
+          </div>
+
+
+          <div class="terapia fuccia">
+
+            <img class="img-tarj" src="./iconos/icon-psicopedagogia.png" alt="iconoFono" width="40px">
+              <li class="active"><a data-toggle="tab" href="#multiCollapsePsicologia">
+                Psicología</li>
+
+
+          </div>
+
+          <div class="container terapia verde ">
+
+            <img class="img-tarj" src="./iconos/icon-psicopedagogia.png" alt="iconoFono" width="40px">
+              <li class="active"><a data-toggle="tab" href="#multiCollapsePsicopedagogía">
+                Psicopedagogía</li>
+
+
+          </div>
+
+          <div class="tab-content bg-white">
+              <div id="multiCollapseKinesiologia" class="tab-pane fade in active">
+                  <h3>Kinesiología</h3>
+                  <p> La función del kinesiologo en el equipo de reahabilitación neurológica tiene como
+                principal objetivo tratar afecciones neuromotoras, ya sea en niños con trastornos
+                neurológicos o bien con retraso psicomotoro. Los objetivos del tratamiento se proponen
+                en función de la necesidad de cada niño y de su entorno familiar.
+                Como terapeutas, los kinesiologos, debemos acompañar el desarrollo del paciente y
+                potenciar sus habilidades y destrezas para lograr la independencia de nuestros niños y
+                su inserción social.</p>
+                </div>
+
+              <div id="multiCollapseTerapiaFonoaudiologia" class="tab-pane fade">
+                  <h3>Fonoaudiología</h3>
+                  <p> Somos profesionales especializados en el diagnóstico y tratamiento de las
+                problemáticas vinculadas a
+                la comunicación, el lenguaje y la alimentación en niños y adolescentes. Las
+                prácticas clínicas toman
+                en consideración las pautas del neurodesarrollo, sin perder de vista las
+                singularidades de cada
+                paciente y los aconteceres tanto de su contexto familiar como social por los que
+                está atravesado.</p>
+                </div>
+             <div id="multiCollapseTerapiaOcupacional" class="tab-pane fade">
+                  <h3>Terapia OcupacionalL:</h3>
+                  <p> En el espacio de terapia ocupacional trabajamos favoreciendo
+                el
+                desempeño
+                ocupacional
+                del niño con el objetivo de acompañarlo para que logre una participacion activa en
+                los diferentes
+                ambientes en los que se desempeña. Intervenimos a traves del juego, ya q es una de
+                las ocupaciones
+                más importante en esta etapa, evaluando y estableciendo estrategias que mejoren sus
+                habilidades motoras,sensoriales,cognitivas y sociales con el fin de lograr autonomia
+                en aquellas actividades
+                diarias y significativas para cada niño en particular.
+              </p>
+                </div>
+
+             <div id="multiCollapsePsicologia" class="tab-pane fade">
+                  <h3>Pisoclogía:</h3>
+                  <p> En el espacio de terapia ocupacional trabajamos favoreciendo
+                el
+                desempeño
+                ocupacional
+                del niño con el objetivo de acompañarlo para que logre una participacion activa en
+                los diferentes
+                ambientes en los que se desempeña. Intervenimos a traves del juego, ya q es una de
+                las ocupaciones
+                más importante en esta etapa, evaluando y estableciendo estrategias que mejoren sus
+                habilidades motoras,sensoriales,cognitivas y sociales con el fin de lograr autonomia
+                en aquellas actividades
+                diarias y significativas para cada niño en particular.
+              </p>
+                </div>
+              <div id="multiCollapseEstimulacionTemprana" class="tab-pane fade">
+                  <h3>Estimulacion Temprana</h3>
+                  <p> Pensamos a la Estimulacion Temprana como un proceso complejo, desde lo terapéutico está
+                dirigido a la sociedad toda, para que a través de recursos humanos idóneos en esta
+                especialidad se pueda prevenir, asistir, educar y/o rehabilitar oportunamente desde las
+                disciplinas de la salud al neonato o bien al infante garantizando además la
+                participación de su familia.
+                El abordaje terapéutico se realizará de manera integral en el niño e
+                interdisciplinariamente.</p>
+                </div>
+
+              <div id="multiCollapsePsicopedagogía" class="tab-pane fade">
+                  <h3>Psicopedagogía</h3>
+                  <p> Nuestro objetivo desde la psicopedagogia es acompañar a niños, niñas y adolescentes
+                en
+                la construccion
+                de aprendizajes significativos y en la apropiacion de estrategias que favorezcan el
+                desarrollo del
+                pensamiento. Las propuestas se enmarcan en experiencias simbólicas: juego, dibujo,
+                escritura, entre
+                otras, y som tanto de manera individual, como asi también, grupal.
+
+                  </div>
+             
+
+
+
+          </div>
+
+  </main>
+
+  <!-- opcion con el archivo descargado-->
+  <script src="./bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+  <!-- link bootstrap JavaScript-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+<footer class="footer .verde">
+  <p>Copyright ©2022 | Todos los Derechos Reservados - Created by Paola Giménez</p>
+</footer>
+
+</html>
