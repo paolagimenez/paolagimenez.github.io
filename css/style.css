@@ -1,68 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Norican&family=Raleway:wght@30;60;90;100;150;300;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&effect=shadow-multiple&family=Norican&family=Raleway&effect=shadow-multiple:wght@30;60;90;100;150;300;800&display=swap');
 
 * {
-    box-sizing: border-box;
-    margin: 0;   
-    font-family: 'Noto Sans', sans-serif;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Courgette';
+  margin: 0 auto;
+
+}
 
 .principal {
- 
-    margin: 0 auto;
-  
+  margin: 0 auto;
+  font-size: 18px;
+  text-align: justify;
+  text-justify: inter-word;
 }
-.menu{
-display: flex;
 
+.blockquote {
+  text-align: justify;
+  text-justify: inter-word;
 }
-.encabezado{
+
+.menu {
+  display: flex;
+}
+
+.encabezado {
   display: flex;
   justify-content: space-around;
 
 }
-.img-tarj{
+
+.img-tarj {
   width: "100px";
 }
-body{
-  height: 100%; 
+
+body {
+  height: 100%;
   font-family: 'Noto Sans', sans-serif;
-  background-color: white; 
+  background-color: white;
 }
-header {   
-    position: top;
-    top: 0;
-    width: 100%;   
- 
+
+header {
+  position: top;
+  top: 0;
+  width: 100%;
 }
 
 header span {
   color: black;
   font-size: 45px;
   display: inline-block;
-  bottom: 30px;    
+  bottom: 30px;
 }
 
-nav {  
-  
-    height: 25px;    
-    top: 250px;
+nav {
+  height: 25px;
+  top: 250px;
 }
 
 nav ul {
-    list-style: none;
-    padding: 25px;
-    display: flex;  
+  list-style: none;
+  padding: 25px;
+  display: flex;
 }
 
 nav ul li {
-    flex-grow: 12;
+  flex-grow: 12;
 }
 
 nav ul li a {
- 
   color: white;
   text-decoration: none;
-  /*saca el subrayado del texto*/
+  font-family: 'Courgette';  
   padding: 10px;
   display: block;
   /*esto es para que interprete que es un bloque de fila y funcione el padding superior e inferior*/
@@ -70,35 +79,35 @@ nav ul li a {
   transition: all 0.1s;
 }
 
-/* Nav 1 para Inicio y Menu 2 */
-  nav ul li a.nav1 {
-    background: green;
-    border-radius: 0 0 25px 25px;
+/* Nav 1 para Inicio y Nosotros */
+nav ul li a.nav1 {
+  background: green;
+  border-radius: 0 0 25px 25px;
 }
 
 nav ul li a.nav1:hover {
-    background: green;
-    padding: 18px;
-    border-radius: 0 0 25px 25px;
-    font-size: 20px;
+  background: green;
+  padding: 18px;
+  border-radius: 0 0 25px 25px;
+  font-size: 20px;
 }
 
 nav ul li a.nav1Activo {
-    /* background: #279e15; */
-    background:green;
-    padding: 18px;
-    border-radius: 0 0 25px 25px;
-    font-size: 20px;
+  /* background: #279e15; */
+  background: green;
+  padding: 18px;
+  border-radius: 0 0 25px 25px;
+  font-size: 20px;
 }
 
 nav ul li a.nav1Activo:hover {
-    background: green;
-    padding: 18px;
-    border-radius: 0 0 25px 25px;
-    font-size: 20px;
+  background: green;
+  padding: 18px;
+  border-radius: 0 0 25px 25px;
+  font-size: 20px;
 }
 
-/* NAv2 para Profesionales y Contáctenos */
+/* NAv2 para Terapias y Contáctenos */
 nav ul li a.nav2 {
   background: fuchsia;
   border-radius: 0 0 25px 25px;
@@ -112,7 +121,7 @@ nav ul li a.nav2:hover {
 }
 
 nav ul li a.nav2Activo {
-  background:fuchsia;
+  background: fuchsia;
   padding: 18px;
   border-radius: 0 0 25px 25px;
   font-size: 20px;
@@ -128,66 +137,61 @@ nav ul li a.nav2Activo:hover {
 
 
 main {
-    padding: 70px; 
-    text-align: match-parent;  
-    justify-content: center;
-    margin-top: 30px;    
+  padding: 70px;
+  text-align: match-parent;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 .terapias {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    display: flex;
-    display: grid;    
-    grid-template-columns: repeat(3, 350px);
-    grid-template-rows: 2;
-    grid-gap: 5px;  
-    justify-content: stretch;
- 
+
+  font-family: 'Courgette', cursive;
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: 2;
+  grid-gap: 5px;
+  justify-content: stretch;
+
 }
 
 .terapias .terapia {
-    max-width: 350px;
-    transition: all 0.2s;
-    box-sizing: border-box;
-    text-align: center;
-    padding: 10px 100px;   
-    line-height: 20px;
-    font-size: 15px;    
-    border-radius: 25px;
+
+  max-width: 350px;
+  transition: all 0.2s;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px 100px;  
+  font-size: 15px;
+  border-radius: 25px;
 }
+
 .terapias .terapia i {
-    font-size: 20px;
-    padding-bottom: 30px;
+  font-size: 20px;
+  padding-bottom: 300px;
+ 
 }
 
 .terapias .terapia :hover {
-    transform: scale(110%);
+  transform: scale(110%);
 }
-.verde {
-    background-color: #9bd654;    
-    border-color: #ab4493; 
 
-    
+.verde {
+  background-color: #9bd654;
 }
-.rosaClaro {
-    background-color: #e0d468;    
-}
+
 .fuccia {
-    background-color:fuchsia;    
-}
-.celeste{
-    background-color:#22a6b3; 
+  background-color: fuchsia;
 }
 
 footer {
- 
-    margin: 0 auto;   
-    padding: 10px;
-    text-align: right;
-    margin-top: 20px;
-    font-family: 'Courgette';
-    font-size: 16px;
-    background-color: #97d848; 
+  margin: 0 auto;
+  padding: 10px;
+  text-align: right;
+  margin-top: 20px;
+  font-family: 'Courgette';
+  font-size: 16px;
+  background-color: #97d848;
 }
 
 
@@ -196,185 +200,189 @@ footer {
 .tablaContactenos {
   display: flex;
   flex-direction: column;
-  width: 1080px auto; 
-  
+  width: 1080px auto;
 }
 
-  .formularioDeContacto{  
-
-    display: flex;
-    flex-direction: row;
-    height: auto;
-    margin: 20px auto;
-    border-radius: 10px;  
-    padding-top: 30px;
-    padding-bottom: 20px;  
-    padding-left: 30px; 
-  }
-  
-  .ViasContacto{
-    padding-left: 40px;   
-  
-  }
-  .ViasContacto li{
-    padding-left: 10px;
-    text-align: CENTER;
-    background-color: #97d848;
-  }
-  
-  .ViasContacto ul li{ 
-    padding-top: 50px;
-    padding-left: 20px;
-    display: flex;
-    flex-direction: row;  
-    text-align: center;    
-    width: 400px auto;
-    height: 40px;
-    
-  }
-  input{
-    background-color: #fbfbfb; 
-    width: 408px; 
-    height: 40px; 
-    border-radius: 5px;  
-    border-style: solid; 
-    border-width: 1px; 
-    border-color: #ab4493; 
-    padding-left: 10px;
-    margin-bottom: 10px; 
-  }
-  
-  
-  textarea{
-    background-color: #fbfbfb; 
-    width: 405px; 
-    height: 150px; 
-    border-radius: 5px;  
-    border-style: solid; 
-    border-width: 1px; 
-    border-color: #ab4493; 
-    margin-top: 10px;  
-    padding-left: 10px;
-    margin-bottom: 20px; 
-    padding-top: 15px; 
-  }
-  
-  
-  label{
-    display: block; 
-    float: center;  
-  }
-  
-  
-  button{
-    height: 45px; 
-    padding-left: 5px;
-    padding-right: 5px;   
-    margin-bottom: 20px; 
-    margin-top: 10px;   
-    text-transform: uppercase;
-    background-color: #ab4493; 
-    border-color: #ab4493; 
-    border-style: solid; 
-    border-radius: 10px;  
-    width: 420px;   
-    cursor: pointer;
-  }
-  
-  
-  button p{
-    color: rgb(167, 24, 24); 
-  }
-  
-  
-  span{
-    color: #080707;     
-  }
-  
-  
-  .aviso{
-    font-size: 13px;  
-    color: #0e0e0e;  
-  }
-  
-  
-  h1{
-    font-size: 30px;  
-    text-align: letf; 
-    padding-bottom: 20px; 
-
-  }
-  
-  
-  h3{
-    font-size: 16px; 
-    padding-bottom: 15px;
-    color: #0e0e0e;   
-  }
-  
-  
-  p{
-    font-size: 14px; 
-    color: #0e0e0e; 
-  }
-  
-  
-  ::-webkit-input-placeholder {
-   color: #a8a8a8;
-  }
-  
-  
-  ::-webkit-textarea-placeholder {
-   color: #a8a8a8;
-  }
-  
-  
-  .formulario input:focus{
-    outline:0;
-    border: 1px solid #97d848;
-  }
-  
-  
-  .formulario textarea:focus{
-    outline:0;
-    border: 1px solid #97d848;
-  }
-  
- @media (max-width: 420px) {
-   .terapias {
-     /*lo cambio a una columna para dispositivos mas pequeños*/
-
-     grid-template-columns: 1fr;
-     justify-items: center;
-     background-color: blue;
-   }
-
-   .tablaContactenos {
-
-     grid-template-columns: 1fr;
-     justify-items: center;
-     background-color: yellowgreen;
-  
-   }
- }
- :root{
-  --colorBtn:green;
+.formularioDeContacto {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-left: 30px;
 }
-body{
-  background-color: rgb(241, 245, 247);
+
+.figcaption{
+  text-align: left;
 }
-.card{
+.ViasContacto {
+  padding-left: 40px;
+  ext-align: center;
+}
+
+.ViasContacto li {
+  padding-left: 10px;
+  text-align: CENTER;
+  background-color: #97d848;
+}
+
+.ViasContacto ul li {
+  padding-top: 50px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  width: 400px auto;
+  height: 40px;
+}
+
+input {
+  background-color: #fbfbfb;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ab4493;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+
+textarea {
+  background-color: #fbfbfb;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ab4493;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+
+label {
+  display: block;
+  float: center;
+}
+
+
+button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #ab4493;
+  border-color: #ab4493;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+}
+
+
+button p {
+  color: rgb(167, 24, 24);
+}
+
+
+span {
+  color: #080707;
+}
+
+
+.aviso {
+  font-size: 13px;
+  color: #0e0e0e;
+}
+
+
+h1 {
+  font-size: 30px;
+  text-align: letf;
+  padding-bottom: 20px;
+}
+
+
+h3 {
+  font-size: 16px;
+  padding-bottom: 15px;
+  color: #0e0e0e;
+}
+
+
+p {
+  font-size: 14px;
+  color: #0e0e0e;
+}
+
+
+::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+  color: #a8a8a8;
+}
+
+
+.formulario input:focus {
+  outline: 0;
+  border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus {
+  outline: 0;
+  border: 1px solid #97d848;
+}
+
+@media (max-width: 420px) {
+  .terapias {    
+    grid-template-columns: 1fr;
+    justify-items: center;
+    background-color: blue;
+  }
+
+  .tablaContactenos {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    background-color: yellowgreen;
+  }
+}
+
+:root {
+  --colorBtn: green;
+}
+
+body {
+  background-color: rosybrown);
+}
+
+.card {
   width: 18rem;
-} 
-.btn-success{
+}
+
+.btn-success {
   background-color: var(--colorBtn);
 }
-.btn-success:hover{
+
+.btn-success:hover {
   background-color: rgb(42, 165, 108);
 }
-section{
+
+section {
   gap: 25px;
 }
-.fondo{
+
+.fondo {
   background-color: violet;
 }
